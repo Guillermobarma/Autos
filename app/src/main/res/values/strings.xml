@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Autos</string>
+    <string name="tv_correo">Correo</string>
+    <string name="tv_clave">Contraseña</string>
+    <string name="msg_fallo">Error…</string>
+
+</resources>
