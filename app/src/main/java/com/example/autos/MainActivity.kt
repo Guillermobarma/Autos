@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.autos.databinding.ActivityMainBinding
+import com.example.autos.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
@@ -40,14 +40,14 @@ class MainActivity : AppCompatActivity() {
         binding.btRegister.setOnClickListener { haceRegistro() }
 
         //se establecen los paramentros de autenticacion de google
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id_r))
-            .requestEmail()
-            .build()
+        //val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+          //  .requestIdToken(getString(R.string.default_web_client_id_r))
+            //.requestEmail()
+            //.build()
 
         //set fija la solicitud e cliente de google
-        googleSignInClient = GoogleSignIn.getClient(this,gso)
-        binding.btGoogle.setOnClickListener{ googleSignIn() }
+        //googleSignInClient = GoogleSignIn.getClient(this,gso)
+        //binding.btGoogle.setOnClickListener{ googleSignIn() }
     }
 
     private fun googleSignIn() {
