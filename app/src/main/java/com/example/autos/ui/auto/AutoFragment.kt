@@ -1,4 +1,4 @@
-package com.example.autos.ui.home
+package com.example.autos.ui.auto
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,29 +7,27 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.autos.databinding.FragmentHomeBinding
+import com.example.autos.databinding.FragmentAutoBinding
 
-class HomeFragment : Fragment() {
+class AutoFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentAutoBinding? = null
     private val binding get() = _binding!!
+    private lateinit var autoViewModel: AutoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        autoViewModel =
+            ViewModelProvider(this).get(AutoViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentAutoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        autoViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
