@@ -1,4 +1,4 @@
-package com.example.autos.ui.auto
+package com.example.autos.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
