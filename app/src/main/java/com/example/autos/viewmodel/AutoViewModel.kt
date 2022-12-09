@@ -1,13 +1,26 @@
 package com.example.autos.viewmodel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.*
+import com.example.autos.data.AutoDao
+import com.example.autos.model.Auto
+import com.example.autos.repository.AutoRepository
+import kotlinx.coroutines.launch
 
-class AutoViewModel : ViewModel() {
+class AutoViewModel(application: Application) : AndroidViewModel(application) {
+    val getAutos : MutableLiveData<List<Auto>>
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    private val repository: AutoRepository = AutoRepository(AutoDao())
+
+    init {
+        getAutos = repository.getAutos
     }
-    val text: LiveData<String> = _text
+
+    fun saveAuto(auto: Auto) {
+        viewModelScope.launch { repository.saveAuto(auto) }
+    }
+
+    fun deleteAuto(auto: Auto) {
+        viewModelScope.launch { repository.deleteAuto(auto)}
+    }
 }

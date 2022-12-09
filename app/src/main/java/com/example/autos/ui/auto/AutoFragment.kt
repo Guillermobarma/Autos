@@ -7,6 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.autos.R
+import com.example.autos.adapter.AutoAdapter
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.autos.databinding.FragmentAutoBinding
 import com.example.autos.viewmodel.AutoViewModel
 
@@ -25,13 +29,23 @@ class AutoFragment : Fragment() {
             ViewModelProvider(this).get(AutoViewModel::class.java)
 
         _binding = FragmentAutoBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        autoViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        binding.btAddServicioFab.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_auto_to_addAutoFragment)
         }
-        return root
+
+        //activacion del ReciclerView
+        val autoAdapter= AutoAdapter() //objeto del adaptador desarrolado para dibujar los ligares en las cajitas
+        val reciclador = binding.reciclador // recupera el reciclerview de la vista
+
+        reciclador.adapter= autoAdapter // se asocia el adaptador programado al rec
+        reciclador.layoutManager = LinearLayoutManager(requireContext())
+
+        autoViewModel.getAutos.observe(viewLifecycleOwner){ autos ->
+            autoAdapter.setData(autos)//este es el que llena todas las filas del reclacler view
+        }
+
+        return binding.root
     }
 
     override fun onDestroyView() {

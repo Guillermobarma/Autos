@@ -9,13 +9,68 @@
         android:id="@+id/nav_auto"
         android:name="com.example.autos.ui.auto.AutoFragment"
         android:label="@string/menu_auto"
-        tools:layout="@layout/fragment_auto" />
+        tools:layout="@layout/fragment_auto" >
+        <action
+            android:id="@+id/action_nav_auto_to_addAutoFragment"
+            app:destination="@id/addAutoFragment" />
+        <action
+            android:id="@+id/action_nav_auto_to_updateAutoFragment"
+            app:destination="@id/updateAutoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_servicio"
+        android:name="com.example.autos.ui.servicio.ServicioFragment"
+        android:label="@string/menu_servicio"
+        tools:layout="@layout/fragment_auto" >
+        <action
+            android:id="@+id/action_nav_servicio_to_addServicioFragment"
+            app:destination="@id/addServicioFragment" />
+        <action
+            android:id="@+id/action_nav_servicio_to_updateServicioFragment"
+            app:destination="@id/updateServicioFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.autos.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/addServicioFragment"
+        android:name="com.example.autos.ui.servicio.AddServicioFragment"
+        android:label="fragment_add_servicio"
+        tools:layout="@layout/fragment_add_servicio" >
+        <action
+            android:id="@+id/action_addServicioFragment_to_nav_servicio"
+            app:destination="@id/nav_servicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateServicioFragment"
+        android:name="com.example.autos.ui.servicio.UpdateServicioFragment"
+        android:label="fragment_update_servicio"
+        tools:layout="@layout/fragment_update_servicio" >
+        <action
+            android:id="@+id/action_updateServicioFragment_to_nav_servicio"
+            app:destination="@id/nav_servicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAutoFragment"
+        android:name="com.example.autos.ui.auto.AddAutoFragment"
+        android:label="fragment_add_auto"
+        tools:layout="@layout/fragment_add_auto" >
+        <action
+            android:id="@+id/action_addAutoFragment_to_nav_auto"
+            app:destination="@id/nav_auto" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAutoFragment"
+        android:name="com.example.autos.ui.auto.UpdateAutoFragment"
+        android:label="UpdateAutoFragment" >
+        <action
+            android:id="@+id/action_updateAutoFragment_to_nav_auto"
+            app:destination="@id/nav_auto" />
+    </fragment>
 
 
 </navigation>

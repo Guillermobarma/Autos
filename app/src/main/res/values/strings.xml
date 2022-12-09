@@ -14,5 +14,33 @@
     <string name="menu_auto">Autos</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="firebaseAutentica">project-46845188798</string>
+    <string name="menu_servicio">Servicios</string>
+    <string name="msg_subiendo_audio">Subiendo nota Audio</string>
+    <string name="msg_subiendo_imagen">Subiendo Imagen</string>
+    <string name="msg_graba_audio">Grabando Nota de Audio</string>
+    <string name="msg_detener_audio">Nota de Audio Detenida!</string>
+    <string name="msg_servicio_added">Servicio Agregado!</string>
+    <string name="msg_data">Faltan Datos!!!</string>
+    <string name="msg_fecha">Fecha del servicio</string>
+    <string name="msg_descripcion">Descripción</string>
+    <string name="msg_kilometraje">Kilometraje</string>
+    <string name="bt_add_servicio">Agregar Servicio</string>
+    <string name="bt_delete_servicio">Eliminar Servicio</string>
+    <string name="bt_update_servicio">Actualizar Servicio</string>
+    <string name="msg_auto_added">Auto Agregado!!</string>
+    <string name="bt_delete_auto">Eliminar Auto</string>
+    <string name="msg_seguro_borrado">"¿Está seguro que desea borrar a "</string>
+    <string name="msg_no">No</string>
+    <string name="msg_si">Sí</string>
+    <string name="msg_servicio_deleted">Servicio Eliminado!!</string>
+    <string name="msg_auto_deleted">Auto Eliminado!!</string>
+    <string name="msg_servicio_updated">Servicio Actualizado!!</string>
+    <string name="msg_auto_updated">Auto Actualizado!!</string>
+    <string name="todo">Pendiente</string>
+    <string name="msg_imagen">Imagen del carro</string>
+    <string name="msg_nombre">Ingresar Nombre</string>
+    <string name="msg_marca">Marca del Vehículo</string>
+    <string name="bt_update_auto">Actualizar Auto</string>
 
 </resources>
