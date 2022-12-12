@@ -22,7 +22,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/et_nombre"
+        android:id="@+id/et_Descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -30,7 +30,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/et_kilometraje"
+        android:id="@+id/et_Celular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

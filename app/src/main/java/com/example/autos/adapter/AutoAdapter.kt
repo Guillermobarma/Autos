@@ -18,8 +18,8 @@ class AutoAdapter : RecyclerView.Adapter<AutoAdapter.AutoViewHolder>(){
     inner class AutoViewHolder(private val itemBinding: AutoFilaBinding):
         RecyclerView.ViewHolder(itemBinding.root){
         fun bind(auto: Auto){
-            itemBinding.tvNombre.text = auto.nombre
-            itemBinding.tvFecha.text = auto.marca
+            itemBinding.tvDescripcion.text = auto.nombre
+            //itemBinding.tvFecha.text = auto.marca
 
 
 //            itemBinding.vistaFila.setOnClickListener{

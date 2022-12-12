@@ -40,7 +40,7 @@ class UpdateServicioFragment : Fragment() {
         _binding = FragmentUpdateServicioBinding.inflate(inflater, container, false)
 
         binding.etFecha.setText(args.servicio.fecha)
-        binding.etNombre.setText(args.servicio.descripcion)
+        binding.etDescripcion.setText(args.servicio.descripcion)
         binding.etKilometraje.setText(args.servicio.kilometraje)
 
         binding.btUpdateServicio.setOnClickListener { updateServicio() }

@@ -4,21 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.servicio.UpdateServicioFragment">
+    tools:context=".ui.mecanico.UpdateMecanicoFragment">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
-
-        <EditText
-            android:id="@+id/et_fecha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/msg_fecha"
-            android:inputType="text" />
 
         <EditText
             android:id="@+id/et_Descripcion"
@@ -33,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/msg_kilometraje"
+            android:hint="@string/msg_celular"
             android:inputType="number" />
 
 
@@ -41,13 +34,13 @@
             android:id="@+id/bt_delete_mecanico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bt_delete_servicio" />
+            android:text="@string/bt_delete_mecanico" />
 
         <Button
             android:id="@+id/bt_update_mecanico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bt_update_servicio" />
+            android:text="@string/bt_update_mecanico" />
 
 
 

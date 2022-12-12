@@ -39,8 +39,8 @@ class UpdateAutoFragment : Fragment() {
         autoViewModel = ViewModelProvider(this).get(AutoViewModel::class.java)
         _binding = FragmentUpdateAutoBinding.inflate(inflater, container, false)
 
-        binding.etNombre.setText(args.auto.nombre)
-        binding.etMarca.setText(args.auto.marca)
+        binding.etDescripcion.setText(args.auto.nombre)
+        //binding.etMarca.setText(args.auto.marca)
 
         binding.btUpdateAuto.setOnClickListener { updateAuto() }
         binding.btDeleteAuto.setOnClickListener { deleteAuto() }

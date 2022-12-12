@@ -22,7 +22,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/et_nombre"
+        android:id="@+id/et_Descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:id="@+id/bt_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bt_add_servicio" />
+        android:text="@string/bt_add_auto" />
 
 
     <ProgressBar

@@ -17,15 +17,15 @@ class ServicioAdapter : RecyclerView.Adapter<ServicioAdapter.ServicioViewHolder>
     inner class ServicioViewHolder(private val itemBinding: ServicioFilaBinding):
         RecyclerView.ViewHolder(itemBinding.root){
         fun bind(servicio: Servicio){
-            itemBinding.tvNombre.text = servicio.descripcion
-            itemBinding.tvFecha.text = servicio.fecha
+            itemBinding.tvDescripcion.text = servicio.descripcion
+            //itemBinding.tvFecha.text = servicio.fecha
             itemBinding.tvKilometraje.text = servicio.kilometraje
 
-//            itemBinding.vistaFila.setOnClickListener{
-//                val accion = ServicioFragmentDirections
-//                    .actionNavServicioToUpdateServicioFragment(servicio)
-//                itemView.findNavController().navigate(accion)
-//            }
+            itemBinding.vistaFila.setOnClickListener{
+                val accion = ServicioFragmentDirections
+                    .actionNavServicioToUpdateServicioFragment(servicio)
+                itemView.findNavController().navigate(accion)
+            }
         }
 
     }

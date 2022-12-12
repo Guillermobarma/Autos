@@ -32,10 +32,17 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.autos.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_mecanico"
+        android:name="com.example.autos.ui.mecanico.MecanicoFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_mecanico" >
+        <action
+            android:id="@+id/action_nav_mecanico_to_addMecanicoFragment"
+            app:destination="@id/addMecanicoFragment" />
+        <action
+            android:id="@+id/action_nav_mecanico_to_updateMecanicoFragment"
+            app:destination="@id/updateMecanicoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addServicioFragment"
         android:name="com.example.autos.ui.servicio.AddServicioFragment"
@@ -70,6 +77,24 @@
         <action
             android:id="@+id/action_updateAutoFragment_to_nav_auto"
             app:destination="@id/nav_auto" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMecanicoFragment"
+        android:name="com.example.autos.AddMecanicoFragment"
+        android:label="fragment_add_mecanico"
+        tools:layout="@layout/fragment_add_mecanico" >
+        <action
+            android:id="@+id/action_addMecanicoFragment_to_nav_mecanico"
+            app:destination="@id/nav_mecanico" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateMecanicoFragment"
+        android:name="com.example.autos.updateMecanicoFragment"
+        android:label="fragment_update_mecanico"
+        tools:layout="@layout/fragment_update_mecanico" >
+        <action
+            android:id="@+id/action_updateMecanicoFragment_to_nav_mecanico"
+            app:destination="@id/nav_mecanico" />
     </fragment>
 
 

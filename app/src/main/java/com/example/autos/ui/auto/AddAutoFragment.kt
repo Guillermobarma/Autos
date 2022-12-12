@@ -95,7 +95,7 @@ class AddAutoFragment : Fragment() {
     }
 
     private fun subeAuto(rutaPublicaAudio: String, rutaPublicaImagen: String) {
-        val nombre=binding.etNombre.text.toString()
+        val nombre=binding.etDescripcion.text.toString()
         if (nombre.isNotEmpty()) {  //Se puede agregar un auto...
             val marca=binding.etFecha.text.toString()
 

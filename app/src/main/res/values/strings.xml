@@ -42,5 +42,19 @@
     <string name="msg_nombre">Ingresar Nombre</string>
     <string name="msg_marca">Marca del Vehículo</string>
     <string name="bt_update_auto">Actualizar Auto</string>
+    <string name="bt_delete_mecanico">Borrar Mecánico</string>
+    <string name="msg_mecanico_deleted">Mecánico Eliminado!!!</string>
+    <string name="msg_mecanico_updated">Mecánico Actualizado!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_celular">Ingrese Celular</string>
+    <string name="bt_update_mecanico">Actualizar Mecánico</string>
+    <string name="bt_add_auto">Agregar Auto</string>
+    <string name="bt_add_mecanico">Agregar Mecánico</string>
+    <string name="tv_latitud_lb">Latitud</string>
+    <string name="tv_longitud_lb">Longitud</string>
+    <string name="tv_altura_lb">Altura</string>
+    <string name="msg_imagen_mecanico">Imagen de Mecanico</string>
+    <string name="msg_mecanico_added">Mecanico Agregado</string>
 
 </resources>

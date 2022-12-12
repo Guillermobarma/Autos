@@ -21,7 +21,7 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/et_nombre"
+            android:id="@+id/et_Descripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -30,13 +30,13 @@
 
 
         <Button
-            android:id="@+id/bt_delete_auto"
+            android:id="@+id/bt_delete_mecanico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bt_delete_auto" />
 
         <Button
-            android:id="@+id/bt_update_auto"
+            android:id="@+id/bt_update_mecanico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bt_update_auto" />

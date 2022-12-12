@@ -38,14 +38,15 @@
             tools2:layout_editor_absoluteX="140dp" />
 
         <ImageView
-            android:id="@+id/imagen"
-            android:layout_width="125dp"
-            android:layout_height="111dp"
+            android:id="@+id/imageView2"
+            android:layout_width="102dp"
+            android:layout_height="104dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_Celular"
+            app:layout_constraintHorizontal_bias="0.472"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_carro" />
+            app:srcCompat="@android:drawable/ic_menu_manage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
